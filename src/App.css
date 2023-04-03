@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(45, 62, 70);
+  background-image: url('./pattern_bg.png');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(45, 62, 70);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(43, 73, 88);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+header h2{
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('./pattern_bg.png');
+  margin-top: 5px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.main-content{
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b4653;
+  gap: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+input{
+  height: 40px;
+  width: 40%;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+button{
+  height: 40px;
+  width: 10%;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: #2B4653;
+  color: white;
+  border: 0.5px solid white;
+}
+.card-list{
+  padding: 40px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  
+}
+.card{
+  height: 60px;
+  width: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card h3{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  letter-spacing: 1;
+  font-size: 22px;
+  font-weight: bold;
 }
