@@ -87,7 +87,9 @@ button:hover{
   height: 60px;
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 20px;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -96,4 +98,9 @@ button:hover{
   letter-spacing: 1;
   font-size: 22px;
   font-weight: bold;
+}
+.delete{
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
 }
